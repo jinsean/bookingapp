@@ -5,6 +5,9 @@ const HotelSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  rooms: {
+    type: [String],
+  },
 });
 
 export default mongoose.model("Hotel", HotelSchema)
