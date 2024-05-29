@@ -33,6 +33,8 @@ export const updateRoom = async (req, res, next) => {
     }
 };
 
+//1. Request Room id
+//2. Push Date in the Array
 export const updateRoomAvailability = async (req, res, next) => {
     try {
       await Room.updateOne(
