@@ -14,6 +14,13 @@ const router = express.Router();
 //CREATE Room
 router.post("/:hotelid", verifyAdmin, createRoom);
 
+//UPDATE
+router.put("/availability/:id", updateRoomAvailability);
+router.put("/:id", verifyAdmin, updateRoom);
+
+//GET One room
+router.get("/:id", getRoom);
+
 //GET ALL
 router.get("/", getRooms);
 
